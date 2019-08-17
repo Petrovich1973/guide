@@ -8,21 +8,26 @@
     <title>Список</title>
     <style>
         .header {
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: bold;
             margin: 1em 0
         }
         .list {
-            margin: 1em;
+            margin: 1em 0;
+            padding-left: 40px;
         }
         .list > div {
-            list-style-type: disc;
+            display: list-item;
+            list-style-type: square;
         }
     </style>
 </head>
 <body>
-    <р1>Разработка списка задач</р1>
+
+    <h1>Разработка списка задач</h1>
+
     <h2>List</h2>
+
     <ul>
         <li>item 2</li>
         <li>item 3</li>
@@ -34,6 +39,7 @@
     <hr/>
 
     <div class="header">List</div>
+
     <div class="list">
         <div>item 1</div>
         <div>item 1</div>
@@ -41,10 +47,14 @@
         <div>item 1</div>
         <div>item 1</div>
     </div>
-    <script>
-        const element = document.querySelector('.header');
 
-        element.addEventListener('onclick', () => element.style = 'red', false);
+    <script>
+
+        const el = document.querySelector('.header');
+
+        el.addEventListener('click', () => el.setAttribute('style', 'background: black; color: white;'), false);
+
     </script>
+
 </body>
 </html>
