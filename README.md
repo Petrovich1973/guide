@@ -1,5 +1,5 @@
-# guide
-Учим js
+# Guide web develop
+usage html, css, js
 
 1. Создание проекта на github.
 2. Установка Git и обучение работы с ним.
